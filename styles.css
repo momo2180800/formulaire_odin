@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+}
+.left-side {
+    background-image: url("img/arriere.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 30%;
+    position: relative;
+}
+
+.logo {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position : absolute;
+    top : 30%;
+    background-color: rgba(0, 0, 0, 0.5); /* Noir avec une opacity de 0.5 */
+      
+}
+.logo img {
+    display: inline-block;
+    height:  4rem;
+}
+.logo h1{
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: 'Times New Roman', serif;
+    color: #fff;
+}
+.right-side {
+    background-color: #f9fafb;
+    width: 70%;
+}
+.wrapper {
+    width: 100%;
+    margin-top : 30px;
+    margin-bottom: 30px;
+}
+.wrapper h2 {
+    
+    font-weight: bold;
+}
+.one,.two {
+    margin-top: 0;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.it {
+    font-style: italic;
+}
+
+#form .input_cont{
+    background-color: #fff;
+    padding: 10px 10px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 6px 10px 0px rgba(117,109,109,0.75);
+    gap : 15px;
+}
+.row {
+    display: flex;
+    gap : 20px
+}
+.row div {
+    width: 30%;
+}
+.row input,.row label {
+    display: block;
+}
+
+.row input {
+    width : 100%;
+    padding : 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #c9ddf0;
+}
+.row input:focus{
+    outline: none; /* Supprime la bordure par défaut lorsqu'il est sélectionné */
+    box-shadow: 0px 0px 3px 1px #4d94ff; /* Ajoute une ombre de boîte bleue */
+    border: 1px solid #4d94ff; /* Ajoute une bordure bleue */
+}
+#form button{
+    margin-top: 20px;
+    margin-left: 30px;
+    padding : 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #596d48;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+}
+.wrapper p {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.wrapper p  span{
+    color : #596d48;
+}
+
+
